@@ -12,5 +12,5 @@ def reverse_words_order_and_swap_cases(sentence):
             ans += j.upper()
         else:
             ans += j.lower()
-    return ans
+    return ans 
             
