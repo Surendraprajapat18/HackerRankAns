@@ -1,0 +1,16 @@
+def reverse_words_order_and_swap_cases(sentence):
+
+    s = sentence.split()[::-1]
+    l = []
+    for i in s:
+        l.append(i)
+    reversedstring = ' '.join(l)
+    #print(l)
+    ans = ''
+    for j in reversedstring:
+        if j.islower():
+            ans += j.upper()
+        else:
+            ans += j.lower()
+    return ans
+            
